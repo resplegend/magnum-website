@@ -11,9 +11,7 @@ export function PageHeader({ title, breadcrumbs, backgroundImage }: PageHeaderPr
     <div
       className="relative h-64 flex items-center justify-center"
       style={{
-        backgroundImage: backgroundImage
-          ? `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${backgroundImage})`
-          : "linear-gradient(135deg, #3b82f6 0%, #1e40af 100%)",
+        backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

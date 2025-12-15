@@ -50,19 +50,12 @@ export function Navigation() {
           <div className="hidden lg:flex items-center gap-4">
             <div className="text-right">
               <div className="text-xs text-gray-600">Call 8AM-5PM, text anytime</div>
-              <a
-                href="tel:615-295-1088"
-                className="text-lg font-bold text-gray-900 hover:text-blue-600 transition-colors flex items-center gap-1"
-              >
-                <Phone className="h-4 w-4" />
-                615-295-1088
-              </a>
             </div>
             <Button
               asChild
               className="bg-orange-500 hover:bg-orange-600 text-white rounded-full px-6 py-5 text-sm font-semibold shadow-lg"
             >
-              <Link href="/#consultation">(352) 866-0111</Link>
+              <Link href="/#consultation">(615)-295-1088</Link>
             </Button>
           </div>
 
@@ -86,11 +79,8 @@ export function Navigation() {
               </Link>
             ))}
             <div className="pt-4 space-y-2">
-              <a href="tel:615-295-1088" className="block text-xl font-bold text-gray-900">
-                615-295-1088
-              </a>
               <Button asChild className="w-full bg-orange-500 hover:bg-orange-600">
-                <Link href="/#consultation">(352) 866-0111</Link>
+                <Link href="/#consultation">(615)-295-1088</Link>
               </Button>
             </div>
           </div>

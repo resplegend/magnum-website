@@ -12,6 +12,7 @@ export default function ServicesPage() {
           { label: "Home", href: "/" },
           { label: "Services", href: "/services" },
         ]}
+        backgroundImage="/tropical-background.jpg"
       />
       <ResidentialClaims />
       <CommercialClaims />

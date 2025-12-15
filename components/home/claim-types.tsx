@@ -1,19 +1,19 @@
+import Image from "next/image"
 import Link from "next/link"
-import { ClaimTypeIcon } from "@/components/claim-type-icon"
 
 const claimTypes = [
-  { name: "Fire Damage", icon: "fire", href: "/claims#fire" },
-  { name: "Water Damage", icon: "water", href: "/claims#water" },
-  { name: "Wind Damage", icon: "wind", href: "/claims#wind" },
-  { name: "Hail Damage", icon: "hail", href: "/claims#hail" },
-  { name: "Mold Damage", icon: "mold", href: "/claims#mold" },
-  { name: "Flood Damage", icon: "flood", href: "/claims#flood" },
-  { name: "Storm Damage", icon: "storm", href: "/claims#storm" },
-  { name: "Denied Claims", icon: "denied", href: "/claims#denied" },
-  { name: "Vehicle Impact", icon: "vehicle", href: "/claims#vehicle" },
-  { name: "Commercial", icon: "commercial", href: "/claims#commercial" },
-  { name: "Slab Leaks", icon: "slab", href: "/claims#slab" },
-  { name: "Lightning", icon: "lightning", href: "/claims#lightning" },
+  { name: "Fire Damage", href: "/fire-damage" },
+  { name: "Water Damage", href: "/water-damage" },
+  { name: "Wind Damage", href: "/wind-damage" },
+  { name: "Hail Damage", href: "/hail-damage" },
+  { name: "Mold Damage", href: "/mold-damage" },
+  { name: "Flood Damage",  href: "/flood-damage" },
+  { name: "Storm Damage",  href: "/storm-damage" },
+  { name: "Denied Claims",  href: "/denied" },
+  { name: "Vehicle Impact",  href: "/vehicle-impact" },
+  { name: "Commercial",  href: "/commercial" },
+  { name: "Slab Leaks",  href: "/slab-leaks" },
+  { name: "Lightning", href: "/lightning" },
 ]
 
 export function ClaimTypes() {
@@ -31,10 +31,7 @@ export function ClaimTypes() {
               href={claim.href}
               className="flex flex-col items-center gap-4 p-6 bg-white rounded-lg hover:shadow-lg transition-shadow group"
             >
-              <ClaimTypeIcon type={claim.icon} />
-              <span className="text-center font-bold text-sm uppercase tracking-wide group-hover:text-primary transition-colors">
-                {claim.name}
-              </span>
+              <Image alt={claim.name} src={`/images/commercial-claims${claim.href}.png`} width={"100"} height={"100"} />
             </Link>
           ))}
         </div>
