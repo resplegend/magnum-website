@@ -8,13 +8,6 @@ export function UnderpaidDeniedSection() {
           <div className="bg-white dark:bg-gray-800 rounded-lg p-8 md:p-12 shadow-lg space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground text-center">Underpaid or Denied Claims</h2>
 
-            <div className="bg-black text-white p-8 rounded-lg text-center space-y-4">
-              <p className="text-lg md:text-xl leading-relaxed italic">
-                If your claim has been denied, or you don't have enough money to get the work done, give us a call to
-                get an honest opinion of your claim's value and expected results should you decide to hire us.
-              </p>
-            </div>
-
             <p className="text-center text-muted-foreground leading-relaxed">
               When your insurance claim is underpaid or outright denied, it can feel like you're fighting an uphill
               battle. Insurance companies have teams of adjusters and lawyers working to minimize payouts, but you don't

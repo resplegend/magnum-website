@@ -12,7 +12,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Magnum PA - Serving all of Florida",
   description:
-    "Florida public adjusters helping you get the settlement you deserve. We fight for your insurance claims.",
+    "Florida public adjusters helping you get the maximum settlement. Licensed since 2014, serving all of Florida.",
   generator: "v0.app",
   icons: {
     icon: "/favicon.ico",

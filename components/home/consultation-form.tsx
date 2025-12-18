@@ -23,9 +23,9 @@ export function ConsultationForm() {
   return (
     <div className="space-y-6">
       <div className="space-y-2">
-        <h3 className="text-2xl font-bold text-blue-700">Get the settlement you deserve</h3>
-        <p className="text-sm text-gray-600 leading-relaxed">
-          Connect with one of our expert public adjusters for a free claim consultation
+        <h3 className="text-2xl font-bold text-blue-700 dark:text-blue-500">Get a FREE consultation</h3>
+        <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+          Contact us today for a free, no-obligation review of your damage and your policy.
         </p>
       </div>
 
