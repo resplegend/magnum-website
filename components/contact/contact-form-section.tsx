@@ -18,7 +18,7 @@ export function ContactFormSection() {
   }
 
   return (
-    <section id="contact" className="py-16 bg-white scroll-mt-24">
+    <section id="contact" className="py-16 bg-white dark:bg-gray-950 scroll-mt-24">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="bg-slate-700 rounded-lg overflow-hidden shadow-xl">
@@ -61,7 +61,7 @@ export function ContactFormSection() {
               </div>
 
               {/* Right Column - Form */}
-              <div className="bg-white p-8 md:p-12">
+              <div className="bg-white dark:bg-gray-800 p-8 md:p-12">
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-2xl font-bold text-foreground">Tell Us What You Need</h3>

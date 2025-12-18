@@ -29,7 +29,7 @@ export function ClaimTypes() {
             <Link
               key={claim.name}
               href={claim.href}
-              className="flex flex-col items-center gap-4 p-6 bg-white rounded-lg hover:shadow-lg transition-shadow group"
+              className="flex flex-col items-center gap-4 p-6 bg-white dark:bg-gray-800 rounded-lg hover:shadow-lg transition-shadow group"
             >
               <Image alt={claim.name} src={`/images/commercial-claims/${claim.image}`} width={100} height={100} />
               <span className="text-sm font-medium text-center text-foreground">{claim.name}</span>

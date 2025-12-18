@@ -1,8 +1,8 @@
 export function DIYSection() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white dark:bg-gray-950">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto bg-card border rounded-lg p-8 space-y-6">
+        <div className="max-w-3xl mx-auto bg-card dark:bg-gray-800 border dark:border-gray-700 rounded-lg p-8 space-y-6">
           <h2 className="text-3xl font-bold text-center text-foreground">DIY</h2>
 
           <p className="text-lg leading-relaxed text-center italic text-muted-foreground">

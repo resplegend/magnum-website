@@ -5,7 +5,7 @@ export function UnderpaidDeniedSection() {
     <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
-          <div className="bg-white rounded-lg p-8 md:p-12 shadow-lg space-y-6">
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-8 md:p-12 shadow-lg space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground text-center">Underpaid or Denied Claims</h2>
 
             <div className="bg-black text-white p-8 rounded-lg text-center space-y-4">

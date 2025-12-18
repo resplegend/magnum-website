@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Menu, X, Phone } from "lucide-react"
 import { useState } from "react"
 import Image from "next/image"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -18,19 +19,22 @@ export function Navigation() {
   ]
 
   return (
-    <header className="bg-gray-100 border-b border-gray-200">
+    <header className="bg-gray-100 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
       <div className="container mx-auto px-4">
         <div className="flex h-24 items-center justify-between">
           {/* Logo */}
-          <Link href="/#top" className="flex items-center">
-            <div className="relative h-16 w-48">
+          <Link href="/#top" className="flex items-center gap-3">
+            <div className="relative h-12 w-12">
               <Image
-                src="/blueprint-logo.png"
+                src="/logo.png"
                 alt="Magnum PA"
                 fill
                 className="object-contain"
                 priority
               />
+            </div>
+            <div className="flex flex-col">
+              <span className="font-bold text-lg text-gray-900 dark:text-white">Magnum PA</span>
             </div>
           </Link>
 
@@ -40,7 +44,7 @@ export function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors"
+                className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
                 {link.label}
               </a>
@@ -49,8 +53,9 @@ export function Navigation() {
 
           {/* CTA and Phone */}
           <div className="hidden lg:flex items-center gap-4">
+            <ThemeToggle />
             <div className="text-right">
-              <div className="text-xs text-gray-600">Call 8AM-5PM, text anytime</div>
+              <div className="text-xs text-gray-600 dark:text-gray-400">Call 8AM-5PM, text anytime</div>
             </div>
             <Button
               asChild
@@ -61,26 +66,30 @@ export function Navigation() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="lg:hidden p-2" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle menu">
-            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          <div className="lg:hidden flex items-center gap-2">
+            <ThemeToggle />
+            <button className="p-2 text-gray-700 dark:text-gray-300" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle menu">
+              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-t py-4 space-y-4">
+          <div className="lg:hidden border-t border-gray-200 dark:border-gray-800 py-4 space-y-4">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="block py-2 text-gray-700 hover:text-blue-600"
+                className="block py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}
               </a>
             ))}
-            <div className="pt-4 space-y-2">
-              <Button asChild className="w-full bg-orange-500 hover:bg-orange-600">
+            <div className="pt-4 space-y-2 flex items-center gap-2">
+              <ThemeToggle />
+              <Button asChild className="flex-1 bg-orange-500 hover:bg-orange-600">
                 <Link href="/#consultation">(615)-295-1088</Link>
               </Button>
             </div>

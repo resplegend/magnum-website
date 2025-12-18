@@ -54,7 +54,7 @@ export function Hero() {
           </div>
 
           {/* Right Column - Form */}
-          <div id="consultation" className="bg-white rounded-xl shadow-2xl p-8 lg:p-10">
+          <div id="consultation" className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl p-8 lg:p-10">
             <ConsultationForm />
           </div>
         </div>

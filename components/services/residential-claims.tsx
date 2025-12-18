@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function ResidentialClaims() {
   return (
-    <section id="residential" className="py-16 bg-white scroll-mt-24">
+    <section id="residential" className="py-16 bg-white dark:bg-gray-950 scroll-mt-24">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto space-y-8">
           <div className="text-center space-y-4">

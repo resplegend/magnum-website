@@ -3,23 +3,20 @@ import Image from "next/image"
 
 export function Footer() {
   return (
-    <footer className="bg-muted/50 border-t mt-20">
+    <footer className="bg-muted/50 dark:bg-gray-900/50 border-t border-gray-200 dark:border-gray-800 mt-20">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="space-y-4">
             <a href="#top" className="flex items-center gap-2">
               <div className="relative h-10 w-10">
-                <Image src="/images/image.png" alt="Magnum PA Logo" fill className="object-contain" />
+                <Image src="/logo.png" alt="Magnum PA Logo" fill className="object-contain" />
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-foreground">Magnum PA</span>
               </div>
             </a>
             <p className="text-sm text-muted-foreground">Magnum PA serving all of Florida</p>
-            <div className="relative h-20 w-40">
-              <Image src="/images/image.png" alt="FAPIA Member" fill className="object-contain" />
-            </div>
           </div>
 
           {/* Quick Links */}
