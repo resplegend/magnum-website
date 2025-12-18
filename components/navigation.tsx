@@ -10,10 +10,11 @@ export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const navLinks = [
-    { href: "/about", label: "About" },
-    { href: "/services", label: "Our services" },
-    { href: "/claims", label: "Type of Claims" },
-    { href: "/faq", label: "FAQ" },
+    { href: "#about", label: "About" },
+    { href: "#services", label: "Our services" },
+    { href: "#claims", label: "Type of Claims" },
+    { href: "#faq", label: "FAQ" },
+    { href: "#contact", label: "Contact" },
   ]
 
   return (
@@ -21,11 +22,11 @@ export function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex h-24 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/#top" className="flex items-center">
             <div className="relative h-16 w-48">
               <Image
                 src="/blueprint-logo.png"
-                alt="Magnum PA Blueprint Claims"
+                alt="Magnum PA"
                 fill
                 className="object-contain"
                 priority
@@ -36,13 +37,13 @@ export function Navigation() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
-              <Link
+              <a
                 key={link.href}
                 href={link.href}
                 className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors"
               >
                 {link.label}
-              </Link>
+              </a>
             ))}
           </nav>
 
@@ -69,14 +70,14 @@ export function Navigation() {
         {mobileMenuOpen && (
           <div className="lg:hidden border-t py-4 space-y-4">
             {navLinks.map((link) => (
-              <Link
+              <a
                 key={link.href}
                 href={link.href}
                 className="block py-2 text-gray-700 hover:text-blue-600"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}
-              </Link>
+              </a>
             ))}
             <div className="pt-4 space-y-2">
               <Button asChild className="w-full bg-orange-500 hover:bg-orange-600">

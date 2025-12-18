@@ -18,7 +18,7 @@ export function ContactFormSection() {
   }
 
   return (
-    <section className="py-16 bg-white">
+    <section id="contact" className="py-16 bg-white scroll-mt-24">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="bg-slate-700 rounded-lg overflow-hidden shadow-xl">
@@ -31,37 +31,31 @@ export function ContactFormSection() {
                 </div>
 
                 <p className="text-white/90 leading-relaxed">
-                  Discover experiences you won't find anywhere else – thoughtfully designed in immense youth the heart
-                  of the destination. Soulful stories waiting to be lived.
+                  At Magnum PA, we're here to help you navigate the complex world of insurance claims. Whether you're dealing with property damage, a denied claim, or need guidance on your policy, our experienced team is ready to assist you.
                 </p>
 
                 <div className="space-y-6 pt-4">
                   <div>
-                    <h3 className="font-semibold mb-2">Location</h3>
-                    <p className="text-white/80 text-sm">Anantara Oceanfront Resort</p>
-                    <p className="text-white/80 text-sm">123 Serenity Bay Road</p>
-                    <p className="text-white/80 text-sm">Koh Samui, Thailand 84320</p>
-                    <p className="text-white/80 text-sm">Monday–Sunday | 08:00 - 22:00 (local time)</p>
-                  </div>
-
-                  <div>
-                    <h3 className="font-semibold mb-2">Social Media</h3>
-                    <div className="space-y-1">
-                      <p className="text-white/80 text-sm">Instagram</p>
-                      <p className="text-white/80 text-sm">LinkedIn</p>
-                      <p className="text-white/80 text-sm">Facebook</p>
-                      <p className="text-white/80 text-sm">TikTok</p>
-                    </div>
-                  </div>
-
-                  <div>
-                    <h3 className="font-semibold mb-2">Email</h3>
-                    <p className="text-white/80 text-sm">stay@anantararesort.com</p>
+                    <h3 className="font-semibold mb-2">Service Area</h3>
+                    <p className="text-white/80 text-sm">Serving all of Florida</p>
+                    <p className="text-white/80 text-sm">Licensed Public Adjusters</p>
+                    <p className="text-white/80 text-sm">Since 2014</p>
                   </div>
 
                   <div>
                     <h3 className="font-semibold mb-2">Contact</h3>
-                    <p className="text-white/80 text-sm">+66 77 123 456</p>
+                    <p className="text-white/80 text-sm">Call 8AM-5PM, text anytime</p>
+                    <p className="text-white/80 text-sm font-semibold text-lg mt-2">(615)-295-1088</p>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold mb-2">Why Choose Us</h3>
+                    <ul className="space-y-1 text-white/80 text-sm">
+                      <li>• Work exclusively for you</li>
+                      <li>• Maximize your claim settlement</li>
+                      <li>• Only get paid when you get paid</li>
+                      <li>• Licensed since 2014</li>
+                    </ul>
                   </div>
                 </div>
               </div>

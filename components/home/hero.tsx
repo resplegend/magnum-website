@@ -2,15 +2,18 @@ import { ConsultationForm } from "./consultation-form"
 
 export function Hero() {
   return (
-    <section className="relative min-h-[700px] flex items-center overflow-hidden">
+    <section id="top" className="relative min-h-[700px] flex items-center overflow-hidden">
       <div
         className="absolute inset-0 z-0"
         style={{
           backgroundImage: `url('/tropical-background.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          imageRendering: "high-quality",
         }}
       />
+      <div className="absolute inset-0 z-0 bg-black/20" />
 
       <div className="container relative z-10 mx-auto px-4 py-12">
         <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-start max-w-7xl mx-auto">
@@ -18,7 +21,7 @@ export function Hero() {
           <div className="text-white space-y-6 pt-8">
             <div className="space-y-3">
               <h2 className="text-lg font-medium text-white/90">Serving all of Florida</h2>
-              <h1 className="text-5xl md:text-6xl font-bold text-balance leading-tight">Orlando Public Adjusters</h1>
+              <h1 className="text-5xl md:text-6xl font-bold text-balance leading-tight">Magnum PA</h1>
             </div>
 
             <p className="text-base text-white/95 leading-relaxed max-w-2xl">

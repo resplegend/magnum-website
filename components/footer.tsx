@@ -8,16 +8,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2">
+            <a href="#top" className="flex items-center gap-2">
               <div className="relative h-10 w-10">
                 <Image src="/images/image.png" alt="Magnum PA Logo" fill className="object-contain" />
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-foreground">Magnum PA</span>
-                <span className="text-xs font-semibold text-primary">Blueprint Claims</span>
               </div>
-            </Link>
-            <p className="text-sm text-muted-foreground">Orlando Public Adjusters serving all of Florida</p>
+            </a>
+            <p className="text-sm text-muted-foreground">Magnum PA serving all of Florida</p>
             <div className="relative h-20 w-40">
               <Image src="/images/image.png" alt="FAPIA Member" fill className="object-contain" />
             </div>
@@ -28,24 +27,34 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="text-muted-foreground hover:text-primary">
+                <a href="#top" className="text-muted-foreground hover:text-primary">
                   Home
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/about" className="text-muted-foreground hover:text-primary">
+                <a href="#about" className="text-muted-foreground hover:text-primary">
                   About
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/services" className="text-muted-foreground hover:text-primary">
+                <a href="#services" className="text-muted-foreground hover:text-primary">
                   Services
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/claims" className="text-muted-foreground hover:text-primary">
+                <a href="#claims" className="text-muted-foreground hover:text-primary">
                   Type of Claims
-                </Link>
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="text-muted-foreground hover:text-primary">
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="text-muted-foreground hover:text-primary">
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
@@ -55,24 +64,24 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Our Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/services#residential" className="text-muted-foreground hover:text-primary">
+                <a href="#residential" className="text-muted-foreground hover:text-primary">
                   Residential Claims
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/services#commercial" className="text-muted-foreground hover:text-primary">
+                <a href="#commercial" className="text-muted-foreground hover:text-primary">
                   Commercial Claims
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/claims" className="text-muted-foreground hover:text-primary">
+                <a href="#claims" className="text-muted-foreground hover:text-primary">
                   Denied Claims
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/faq" className="text-muted-foreground hover:text-primary">
+                <a href="#faq" className="text-muted-foreground hover:text-primary">
                   FAQ
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -88,16 +97,16 @@ export function Footer() {
                 </a>
               </li>
               <li className="pt-2">
-                <Link href="/contact" className="text-primary hover:underline">
+                <a href="#contact" className="text-primary hover:underline">
                   Schedule Free Consultation
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Magnum PA Blueprint Claims. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Magnum PA. All rights reserved.</p>
           <p className="mt-2">Licensed Public Adjusters in Florida since 2014</p>
         </div>
       </div>
