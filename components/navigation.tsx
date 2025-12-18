@@ -21,10 +21,10 @@ export function Navigation() {
   return (
     <header className="bg-gray-100 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
       <div className="container mx-auto px-4">
-        <div className="flex h-24 items-center justify-between">
+        <div className="flex h-20 md:h-24 items-center justify-between">
           {/* Logo */}
-          <Link href="/#top" className="flex items-center gap-3">
-            <div className="relative h-12 w-12">
+          <Link href="/#top" className="flex items-center gap-2 md:gap-3">
+            <div className="relative h-10 w-10 md:h-12 md:w-12">
               <Image
                 src="/logo.png"
                 alt="Magnum PA"
@@ -34,7 +34,7 @@ export function Navigation() {
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-lg text-gray-900 dark:text-white">Magnum PA</span>
+              <span className="font-bold text-base md:text-lg text-gray-900 dark:text-white">Magnum PA</span>
             </div>
           </Link>
 

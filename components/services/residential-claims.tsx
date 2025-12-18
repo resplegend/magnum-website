@@ -2,12 +2,12 @@ import Image from "next/image"
 
 export function ResidentialClaims() {
   return (
-    <section id="residential" className="py-16 bg-white dark:bg-gray-950 scroll-mt-24">
+    <section id="residential" className="py-12 md:py-16 bg-white dark:bg-gray-950 scroll-mt-24">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto space-y-8">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">Residential Claims</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <div className="text-center space-y-3 md:space-y-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">Residential Claims</h2>
+            <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
               Handling your residential claim yourself, whether for a burst pipe, slab leak, hail, water, wind, flood,
               lightning, fire, or vehicle impact, can be daunting and cause undue stress and aggravation. Magnum PA
               will ensure your position in the claim is protected, the best possible outcome is
@@ -17,8 +17,8 @@ export function ResidentialClaims() {
           </div>
 
           {/* Before/After Images */}
-          <div className="grid md:grid-cols-3 gap-6 pt-8">
-            <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 pt-6 md:pt-8">
+            <div className="relative h-48 md:h-64 rounded-lg overflow-hidden shadow-lg">
               <Image src="/images/commercial-claims/fire-damage.png" alt="Fire Damage" fill className="object-cover" />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
                 <span className="text-white font-semibold">Fire Damage</span>

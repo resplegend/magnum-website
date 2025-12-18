@@ -1,17 +1,17 @@
 export function WhyChooseUs() {
   return (
-    <section id="services" className="py-16 bg-white dark:bg-gray-950">
+    <section id="services" className="py-12 md:py-16 bg-white dark:bg-gray-950">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Full Service Public Adjuster</h2>
-          <h3 className="text-2xl font-semibold text-primary">MAGNUM PA</h3>
+        <div className="max-w-4xl mx-auto text-center space-y-4 md:space-y-6">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">Full Service Public Adjuster</h2>
+          <h3 className="text-xl md:text-2xl font-semibold text-primary">MAGNUM PA</h3>
 
-          <p className="text-lg leading-relaxed text-muted-foreground">
+          <p className="text-base md:text-lg leading-relaxed text-muted-foreground px-4">
             As a commercial property owner, you have plenty of things to worry about, but getting your claim paid
             correctly for property damages shouldn't be one of them.
           </p>
 
-          <p className="text-lg leading-relaxed text-muted-foreground">
+          <p className="text-base md:text-lg leading-relaxed text-muted-foreground px-4">
             Commercial claims can be more complex than residential, requiring more attention to detail and extensive
             knowledge of commercial and business policies. Magnum PA will ensure your position
             in the claim is protected, the best possible outcome is achieved, income interruption, and how to protect

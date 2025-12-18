@@ -23,14 +23,14 @@ export function ConsultationForm() {
   return (
     <div className="space-y-6">
       <div className="space-y-2">
-        <h3 className="text-2xl font-bold text-blue-700 dark:text-blue-500">Get a FREE consultation</h3>
-        <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+        <h3 className="text-xl md:text-2xl font-bold text-blue-700 dark:text-blue-500">Get a FREE consultation</h3>
+        <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
           Contact us today for a free, no-obligation review of your damage and your policy.
         </p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <Input placeholder="Name" required className="border-gray-300 focus:border-blue-500 focus:ring-blue-500" />
           <Input
             placeholder="Email"
@@ -40,7 +40,7 @@ export function ConsultationForm() {
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <Input
             placeholder="Phone"
             type="tel"
@@ -55,7 +55,7 @@ export function ConsultationForm() {
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <Input
             placeholder="Zip Code"
             required
@@ -81,7 +81,7 @@ export function ConsultationForm() {
 
         <Button
           type="submit"
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-6 text-base shadow-md"
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 md:py-6 text-sm md:text-base shadow-md"
           disabled={isSubmitting}
         >
           {isSubmitting ? "Submitting..." : "Submit"}

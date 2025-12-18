@@ -45,30 +45,30 @@ export function FAQSection() {
   ]
 
   return (
-    <section id="faq" className="py-16 bg-muted/30">
+    <section id="faq" className="py-12 md:py-16 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto space-y-8">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">Frequently Asked Questions</h2>
-            <p className="text-lg text-muted-foreground">
+        <div className="max-w-3xl mx-auto space-y-6 md:space-y-8">
+          <div className="text-center space-y-3 md:space-y-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">Frequently Asked Questions</h2>
+            <p className="text-base md:text-lg text-muted-foreground px-4">
               Have questions about working with a public adjuster? We've got answers.
             </p>
           </div>
 
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="space-y-3 md:space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="bg-white dark:bg-gray-800 px-6 rounded-lg">
-                <AccordionTrigger className="text-left font-semibold hover:text-primary">
+              <AccordionItem key={index} value={`item-${index}`} className="bg-white dark:bg-gray-800 px-4 md:px-6 rounded-lg">
+                <AccordionTrigger className="text-left font-semibold hover:text-primary text-sm md:text-base">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed">{faq.answer}</AccordionContent>
+                <AccordionContent className="text-muted-foreground leading-relaxed text-sm md:text-base">{faq.answer}</AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
 
-          <div className="bg-primary/5 border border-primary/20 rounded-lg p-8 text-center space-y-4 mt-12">
-            <h3 className="text-2xl font-bold text-foreground">Still have questions?</h3>
-            <p className="text-muted-foreground">Contact us today for a free consultation and claim review.</p>
+          <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 md:p-8 text-center space-y-3 md:space-y-4 mt-8 md:mt-12">
+            <h3 className="text-xl md:text-2xl font-bold text-foreground">Still have questions?</h3>
+            <p className="text-sm md:text-base text-muted-foreground">Contact us today for a free consultation and claim review.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
                 href="tel:615-295-1088"

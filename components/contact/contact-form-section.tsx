@@ -18,19 +18,19 @@ export function ContactFormSection() {
   }
 
   return (
-    <section id="contact" className="py-16 bg-white dark:bg-gray-950 scroll-mt-24">
+    <section id="contact" className="py-12 md:py-16 bg-white dark:bg-gray-950 scroll-mt-24">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="bg-slate-700 rounded-lg overflow-hidden shadow-xl">
-            <div className="grid md:grid-cols-2 gap-0">
+            <div className="flex flex-col md:grid md:grid-cols-2">
               {/* Left Column - Info */}
-              <div className="bg-slate-700 text-white p-8 md:p-12 space-y-8">
-                <div className="space-y-4">
-                  <h2 className="text-3xl font-bold">You Have Questions,</h2>
-                  <h2 className="text-3xl font-bold">We Have Answers</h2>
+              <div className="bg-slate-700 text-white p-6 md:p-8 lg:p-12 space-y-6 md:space-y-8">
+                <div className="space-y-2 md:space-y-4">
+                  <h2 className="text-2xl md:text-3xl font-bold">You Have Questions,</h2>
+                  <h2 className="text-2xl md:text-3xl font-bold">We Have Answers</h2>
                 </div>
 
-                <p className="text-white/90 leading-relaxed">
+                <p className="text-white/90 leading-relaxed text-sm md:text-base">
                   At Magnum PA, we're here to help you navigate the complex world of insurance claims. Whether you're dealing with property damage, a denied claim, or need guidance on your policy, our experienced team is ready to assist you.
                 </p>
 
@@ -61,11 +61,11 @@ export function ContactFormSection() {
               </div>
 
               {/* Right Column - Form */}
-              <div className="bg-white dark:bg-gray-800 p-8 md:p-12">
-                <div className="space-y-6">
+              <div className="bg-white dark:bg-gray-800 p-6 md:p-8 lg:p-12">
+                <div className="space-y-4 md:space-y-6">
                   <div>
-                    <h3 className="text-2xl font-bold text-foreground">Tell Us What You Need</h3>
-                    <p className="text-sm text-muted-foreground mt-2">
+                    <h3 className="text-xl md:text-2xl font-bold text-foreground">Tell Us What You Need</h3>
+                    <p className="text-xs md:text-sm text-muted-foreground mt-2">
                       Our team is ready to assist you with every detail, big or small.
                     </p>
                   </div>

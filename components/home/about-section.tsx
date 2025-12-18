@@ -1,12 +1,12 @@
 export function AboutSection() {
   return (
-    <section id="about" className="py-16 bg-white dark:bg-gray-950">
+    <section id="about" className="py-12 md:py-16 bg-white dark:bg-gray-950">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto space-y-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">About Magnum PA</h2>
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">About Magnum PA</h2>
           </div>
-          <div className="space-y-6 leading-relaxed text-lg text-muted-foreground">
+          <div className="space-y-4 md:space-y-6 leading-relaxed text-base md:text-lg text-muted-foreground">
             <p>
               Magnum PA was started in 2025 after the primary adjuster, Craig McGoniale, grew sick of working for the
               insurance company and seeing insureds taken advantage of by insurance companies, and agents selling on
@@ -14,8 +14,8 @@ export function AboutSection() {
               them to be out of pocket more than their deductible. He has been licensed in Florida since 2014.
             </p>
 
-            <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg space-y-4 my-8">
-              <p className="text-foreground font-semibold text-xl">
+            <div className="bg-primary/5 border-l-4 border-primary p-4 md:p-6 rounded-r-lg space-y-3 md:space-y-4 my-6 md:my-8">
+              <p className="text-foreground font-semibold text-lg md:text-xl">
                 At Magnum PA, we believe that when disaster strikes, you deserve a fair and complete recovery.
               </p>
 
@@ -27,9 +27,9 @@ export function AboutSection() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 pt-8">
-              <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-foreground">Our Commitment</h3>
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8 pt-6 md:pt-8">
+              <div className="space-y-3 md:space-y-4">
+                <h3 className="text-xl md:text-2xl font-bold text-foreground">Our Commitment</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="text-primary text-xl font-bold">✓</span>
@@ -50,8 +50,8 @@ export function AboutSection() {
                 </ul>
               </div>
 
-              <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-foreground">Our Experience</h3>
+              <div className="space-y-3 md:space-y-4">
+                <h3 className="text-xl md:text-2xl font-bold text-foreground">Our Experience</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="text-primary text-xl font-bold">•</span>
